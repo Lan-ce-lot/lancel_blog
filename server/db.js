@@ -1,6 +1,5 @@
 // "use strict";
 const mongoose = require('mongoose')
-// mongoose.connect('mongodb://root:123456@47.96.234.116:27017/blog?authSource=admin',{ useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connect('mongodb://localhost/blog',{ useNewUrlParser: true, useUnifiedTopology: true });
 // mongodb://username:password@host:port/
 // 为这次连接绑定事件
