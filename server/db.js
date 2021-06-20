@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 mongoose.connect('mongodb://localhost/blog',{ useNewUrlParser: true, useUnifiedTopology: true });
 // mongodb://username:password@host:port/
 // 为这次连接绑定事件
+
 const db = mongoose.connection;
 db.once('error',() => console.log('Mongo connection error'));
 db.once('open',() => console.log('Mongo connection successed'));
